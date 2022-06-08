@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h3>TEXTFIELD</h3>
+    <form>
+        <label for="firstname">First name: </label>
+        <input type="text" placeholder="Enter your name">
+        <input type="text" value="dutt" placeholder="Enter your name" disabled>
+        <input type="submit">
+ <!--        if i don't want the element to say submit i can change it to other name  -->
+        <input type="submit" value="done">
+        </form>
+    <h3>RADIO BUTTONS</h3>
+    <form>
+        <input type="radio" id="html" name="any_one_element">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="any_one_element">
+        <label for="css">CSS</label>
+        <input type="radio"  id="javascript" name="any_one_element">
+        <label for="javascript">JAVASCRIPT</label>
+    </form>
+    <h3>CHECKBOXES</h3>
+    <form action="sendsthisdatatosomeplace">
+        <input type="checkbox" id="first" value="bike">
+        <label for="first">bike</label>
+        <input type="checkbox" id="second" value="car">
+        <label for="second">car</label>
+        <input type="checkbox" id="third" value="boat">
+        <label for="third">boat</label>
+    </form>
+    <h3>SELECT OPTIONS</h3>
+    <form action="go-somewere">
+        <label for="cars">select any one car</label>
+        <select name="car">
+            <option value="volvo">volvo</option>
+            <option value="bmw">bmw</option>
+            <option value="nissan">nissan</option>
+        </select>
+    </form>
+    <form>
+        <label for="essay">Essay</label><br>
+        <textarea name="essay" id="essay" cols="10" rows="10"></textarea>
+        <input type="submit">
+    </form>
+    <form>
+        <fieldset>
+            <legend>Personal details</legend>
+            <label for="firstname">First name: </label>
+            <input type="text">
+            <input type="submit">
+     <!--        if i don't want the element to say submit i can change it to other name  -->
+            <input type="submit" value="done">
+        </fieldset>
+        <fieldset>
+            <legend>email details</legend>
+            <label for="emal">Email address</label>
+            <input type="text">
+            <input type="submit" value="submit">
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </fieldset>
+    </form>
+</body>
+</html>

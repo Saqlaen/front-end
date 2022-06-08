@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+p>img {
+    width:200px;
+    height:200px;
+    float:right;
+    border:2px dotted black;
+}
+p{
+    border:2px solid black;
+    padding:1.5em;
+}
+/* this is a clear fix */
+p::after{
+    content:" ";
+    clear:both;
+    display: table;
+}
+.div1{
+    background-color: red;
+}
+.div2{
+    background-color: green;
+}
+.div3{
+    background-color: blue;
+}
+.div1,.div2,.div3{
+    float:left;
+    padding:10px;
+}
+.clear-eg{
+    clear: both;
+    display: block;;
+}
+.div4,.div6{
+    float:left;
+    padding:1em;
+    border:2px solid green;
+}
+.div5,.div7 { 
+    float:left;
+    padding:1em;
+    border:2px solid red;
+}
+.div7 {
+    clear:left;
+    
+}
+.color{
+    background-color:wheat;
+    clear:left;
+}
